@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissors game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5cc0f96f81.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div class="scores">
+            <p>
+                You: <span id="user_score">0</span>
+            </p>
+            <p>
+                Computer: <span id="cpu_score">0</span>
+            </p>
+        </div>
+        <div class="choices">
+            <button onclick="checker('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
+            <button onclick="checker('scissors')"><i class="fa-regular fa-hand-scissors"></i></button>
+            <button onclick="checker('paper')"><i class="fa-regular fa-hand"></i></button>
+        </div>
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="cpu_choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
