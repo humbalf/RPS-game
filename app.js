@@ -50,4 +50,6 @@ function checker(input){
 
     document.getElementById("cpu_score").innerHTML = computer_score;
     document.getElementById("user_score").innerHTML = user_score;
+
+    document.getElementById("move").innerHTML = "";
 }
